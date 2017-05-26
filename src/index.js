@@ -19,7 +19,7 @@ module.exports = function(content) {
   var options = {
     compilerBin: query.compilerBin ? query.compilerBin : 'sassc',
     useCompass: query.useCompass ? '--compass' : '',
-    workDir: query.workDir ? query.workDir : null,
+    workDir: query.workDir ? query.workDir : '',
     outputStyle: query.outputStyle ? '-t ' + query.outputStyle : '-t expanded',
     includePaths: query.includePaths ? query.includePaths : [],
     extraArgs: query.extraArgs ? query.extraArgs : '',
