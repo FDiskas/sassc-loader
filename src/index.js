@@ -47,7 +47,7 @@ module.exports = function(content) {
     options.outputPath
   ]
 
-  childProcess.execFile(sassCmd, sassCmdArgs, sassCmdOpts, function(err, stdout, stderr) {
+  childProcess.execFile(sassCmdBin, sassCmdArgs, sassCmdOpts, function(err, stdout, stderr) {
     if (err) {
       callback(err);
     } else {
