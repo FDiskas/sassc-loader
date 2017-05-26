@@ -2,6 +2,7 @@ var fs = require('fs');
 var childProcess = require('child_process');
 var loaderUtils = require('loader-utils');
 var async = require('async');
+var path = require('path');
 
 module.exports = function(content) {
   this.cacheable();
